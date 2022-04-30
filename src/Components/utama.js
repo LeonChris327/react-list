@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 import Beranda from './beranda';
 import TentangSaya from './tentangsaya';
@@ -7,12 +7,15 @@ import Karya from './karya';
 import Kontak from './kontak';
 
 const Utama = () => (
-    <switch>
-        <Route exact path="/" component={Beranda}/>
-        <Route path="/tentangsaya" component={TentangSaya}/>
-        <Route path="/karya" component={Karya}/>
-        <Route path="/kontak" component={Kontak}/>
-    </switch>
+
+    
+        <Routes>
+            <Route path="/" element={<Beranda />}></Route>
+            <Route path="/tentangsaya" element={<TentangSaya />}></Route>
+            <Route path="/karya" element={<Karya />}></Route>
+            <Route path="/kontak" element={<Kontak />}></Route>
+        </Routes>
+    
 )
 
 export default Utama;

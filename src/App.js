@@ -10,10 +10,10 @@ class App extends React.Component {
   render(){  
     return (
       <div> <hr />
-        <link to="/">Bwranda</link>
-        <link to="/tentangsaya">Tentang Saya</link>
-        <link to="/karya">Karya</link>
-        <link to="/kontak">Kontak</link> <hr />
+        <Link to="/">Beranda   |</Link>
+        <Link to="tentangsaya">Tentang Saya   |</Link>
+        <Link to="/karya">Karya   |</Link>
+        <Link to="/kontak">Kontak   |</Link> <hr />
         <p><Utama /></p>
       </div>
     ); 
